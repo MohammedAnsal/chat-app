@@ -1,0 +1,188 @@
+/* Container for overall layout */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5ff; /* Light purple background */
+}
+
+/* Login card with form and image */
+.login-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 60%;
+  max-width: 900px;
+  background: white;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+/* Form container */
+.form-container {
+  padding: 2rem;
+  width: 50%;
+}
+
+/* Title and subtitle */
+.title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0.8rem;
+}
+
+.subtitle {
+  color: #777;
+  font-size: 0.95rem;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+/* Form styling */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch; /* Ensure inputs take full width */
+}
+
+/* Input groups */
+.input-group {
+  margin-bottom: 1.5rem;
+}
+
+.input-group label {
+  display: block;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #444;
+  margin-bottom: 0.5rem;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+  border-color: #6c63ff;
+  outline: none;
+}
+
+/* Password input wrapper */
+.password-group {
+  position: relative; /* For positioning of the button */
+}
+
+.password-wrapper {
+  display: flex; /* Flex container for input and button */
+  align-items: center; /* Center vertically */
+}
+
+/* Password visibility toggle button */
+.password-toggle {
+  background: transparent;
+  border: none;
+  color: #6c63ff;
+  font-size: 0.9rem;
+  cursor: pointer;
+  margin-left: 0.5rem; /* Space between input and button */
+}
+
+/* Login button */
+.login-btn {
+  width: 100%;
+  padding: 0.9rem;
+  background-color: #6c63ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #5549d5;
+}
+
+.gestUser {
+  width: auto; /* Change to auto width */
+  padding: 0.75rem;
+  background-color: #e12d2d; /* Red background for visibility */
+  color: #ffffff; /* White text color */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 1rem; /* Space above the button */
+  margin-left:0 ; /* Push the button to the right */
+}
+
+.gestUser:hover {
+  transform: translateY(-2px); /* Subtle lift effect */
+}
+
+.gestUser:focus {
+  outline: none; /* Remove focus outline */
+  box-shadow: 0 0 0 2px #6c63ff; /* Add a focus ring with your theme color */
+}
+
+
+/* Image container */
+.image-container {
+  width: 50%;
+  background: linear-gradient(135deg, #6c63ff, #8f85ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image {
+  max-width: 85%;
+  border-radius: 10px;
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Keyframe animation for floating effect */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Form switch to redirect to sign up */
+.form-switch {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.form-switch p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.form-switch .signup-link {
+  color: #6c63ff;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Underline on hover */
+/* .form-switch .signup-link:hover {
+  text-decoration: underline;
+} */

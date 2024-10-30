@@ -1,0 +1,102 @@
+/* HomePage.css */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+  color: #ffffff;
+  position: fixed; /* Make navbar fixed at the top */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Keep navbar on top of other elements */
+  background-color: #0056b3; /* Change this color as needed */
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s; /* Add transition for hover effect */
+}
+
+.nav-link:hover {
+  color: #cccccc; /* Lighter shade for hover effect */
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #6c63ff; /* Blue background */
+  padding: 100px 50px 50px; /* Add padding at the top to avoid overlap with navbar */
+  color: #ffffff;
+  min-height: 100vh; /* Ensure full viewport height */
+  box-sizing: border-box; /* Include padding in height */
+}
+
+.text-container {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 24px;
+  margin: 20px 0;
+}
+
+.button-container {
+  display: flex;
+  gap: 10px;
+}
+
+.button {
+  background-color: #ffffff;
+  color: #007bff;
+  border: none;
+  border-radius: 5px;
+  padding: 13px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.button-outline {
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end; /* Align the image to the right */
+  align-items: center;
+  max-height: 400px; /* Adjust max height to prevent scroll */
+  overflow: hidden; /* Hide overflow */
+}
+
+.image {
+  width: 80%;
+  height: auto; /* Maintain aspect ratio */
+  object-fit: contain; /* Ensure the image scales correctly */
+}
