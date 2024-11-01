@@ -9,7 +9,7 @@ const HomePage = () => {
       <nav style={styles.navbar}>
         <h2 style={styles.logo}>Chatty</h2>
         <div style={styles.navLinks}>
-          <a href="#" style={styles.navLink}>
+          <a href="/login" style={styles.navLink}>
             Login
           </a>
         </div>

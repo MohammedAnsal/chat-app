@@ -13,8 +13,8 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 60%;
-  max-width: 900px;
+  width: 55%; /* Matched to login card width */
+  max-width: 800px; /* Reduced max-width for better proportion */
   background: white;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
@@ -29,17 +29,17 @@
 
 /* Title */
 .signUp-title {
-  font-size: 2.2rem; /* Match login title size */
+  font-size: 2.2rem; /* Matched to login title size */
   font-weight: bold;
   color: #333;
-  margin-bottom: 0.8rem; /* Match login margin */
+  margin-bottom: 0.8rem;
 }
 
 /* Subtitle */
 .signUp-subtitle {
-  color: #777; /* Match login subtitle color */
-  font-size: 0.95rem; /* Match login subtitle size */
-  margin-bottom: 2rem; /* Match login margin */
+  color: #777;
+  font-size: 0.95rem;
+  margin-bottom: 2rem;
   line-height: 1.5;
 }
 
@@ -50,18 +50,18 @@
 
 .signUp-input-group label {
   display: block;
-  font-size: 1rem; /* Match login label size */
-  font-weight: 500; /* Match login font weight */
-  color: #444; /* Match login label color */
-  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #444;
+  margin-bottom: 0.2rem;
 }
 
 .signUp-input-group input {
   width: 100%;
   padding: 0.75rem;
   border: 1px solid #ddd;
-  border-radius: 8px; /* Match login border radius */
-  font-size: 1rem; /* Match login font size */
+  border-radius: 8px;
+  font-size: 1rem;
   transition: border-color 0.3s ease;
 }
 
@@ -73,13 +73,13 @@
 /* Sign Up button */
 .signUp-btn {
   width: 100%;
-  padding: 0.9rem; /* Match login button padding */
+  padding: 0.9rem;
   background-color: #6c63ff;
   color: white;
   border: none;
-  border-radius: 8px; /* Match login border radius */
+  border-radius: 8px;
   cursor: pointer;
-  font-size: 1.1rem; /* Match login button font size */
+  font-size: 1.1rem;
   font-weight: bold;
   transition: background-color 0.3s ease;
 }
@@ -98,8 +98,7 @@
 }
 
 .signUp-image {
-  max-width: 90%; /* Match login image width */
-  /* border-radius: 10px; */
+  max-width: 90%;
   animation: float 4s ease-in-out infinite;
 }
 
@@ -120,7 +119,7 @@
 }
 
 .form-switch p {
-  font-size: 0.9rem; /* Match login switch font size */
+  font-size: 0.9rem;
   color: #666;
 }
 
@@ -130,7 +129,35 @@
   font-weight: bold;
   text-decoration: none;
 }
-/* 
-.form-switch .login-link:hover {
-  text-decoration: underline;
-} */
+
+/* Image upload section */
+.signUp-form .image-upload-container {
+  margin-bottom: 1.5rem;
+}
+
+.image-upload-container p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #444;
+  margin-bottom: 0.5rem;
+}
+
+.image-upload-container input[type="file"] {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  cursor: pointer;
+  color: #555;
+}
+
+.image-upload-container input[type="file"]:hover {
+  border-color: #6c63ff;
+}
+
+.image-upload-container input[type="file"]:focus {
+  outline: none;
+  border-color: #6c63ff;
+}
