@@ -86,7 +86,7 @@ const SignUp = () => {
       console.log(data);
 
       toast.success("Registration Successful");
-      localStorage.setItem("userAuth", JSON.stringify(data));
+      localStorage.setItem("userInfo", JSON.stringify(data));
       setIsLoading(false);
       navigate("/");
     } catch (error) {

@@ -40,7 +40,7 @@ const Login = () => {
       const { data } = await axios.post("/user/sign-in", { email }, config);
       if (data) {
         toast.success("SignIn Successfully");
-        localStorage.setItem('userAuth', JSON.stringify(data));
+        localStorage.setItem('userInfo', JSON.stringify(data));
         setisLoading(false);
         navigate('/')
       } else {

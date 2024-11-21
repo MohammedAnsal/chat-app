@@ -1,8 +1,10 @@
 // src/HomePage.js
-import React from "react";
+import React, { useContext, useEffect, useState } from "react";
 import mainPic from "/mainPic.png";
+// import { ChatContext } from "../../Context/ChatProvider";
 
 const HomePage = () => {
+
   return (
     <div>
       {/* Navigation Bar */}
@@ -60,7 +62,6 @@ const styles = {
     // textDecoration: "none",
     // fontSize: "16px",
     // transition: "color 0.3s", // Add transition for hover effect
-
   },
   navLinkHover: {
     color: "#cccccc", // Lighter shade for hover effect
